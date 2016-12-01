@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Phone</title>
+    <meta http-equip="content-type" content="text/html; charset=UTF-8"/ >
+    <meta name="author" content="elias"/>
+    <meta name="email" content="eliasmuol@gmail.com">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div data-role="page" id="princi">
+        <div data-role="header">
+            <h1>FloristElias</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+             Usuario <input type="text" placeholder="Usuario" id="user"></br>
+             Contraseña <input type="text" placeholder="Usuario" id="pass"></br>
+            <a href="#menu">¡Entra!</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a data-transition="fade" data-icon="phone" id="info" href="#contactar">Contactar</a></li>
+                        <li><a data-transition="fade" data-icon="info" id="pedi" href="#pedidos">Pedidos</a></li>
+                        <li><a href="http://www.floristelias.es/" data-transition="fade" data-icon="grid" data-rel="dialog" data-theme="a">FloristElias</a></li>
+                    </ul>
+            </div>
+		</div>
+    </div>
+
+    
+
+    <div data-role="page" id="menu">
+        <div data-role="header">
+            <h1>FloristElias</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div data-role="collapsibleset" data-inset="false">
+				<div data-role="collapsible">
+					<h3>Ramos</h3>
+					<form id="ramos">
+						<input type="text" id="nomcomercial" name="nomcomercial" value="" data-clear-btn="true" placeholder="Nombre comercial">
+						<input type="text" id="nomfiscal" name="nomfiscal" value="" data-clear-btn="true" placeholder="Nombre fiscal">
+						<input type="text" id="nif" name="nif" value="" data-clear-btn="true" placeholder="NIF/CIF">
+						<input type="text" id="direccion" name="direccion" value="" data-clear-btn="true" placeholder="Dirección">
+						<input type="text" id="poblacion" name="poblacion" value="" data-clear-btn="true" placeholder="Población">
+						<input type="text" id="cpostal" name="cpostal" value="" data-clear-btn="true" placeholder="Código postal">
+						<input type="text" id="provincia" name="provincia" value="" data-clear-btn="true" placeholder="Provincia">
+						<select id="pais" name="pais">
+							<option value="España">España</option>
+							<option value="Portugal">Portugal</option>
+							<option value="Francia">Francia</option>
+						</select>
+						<input type="tel" id="telestablecimiento" name="telestablecimiento" value="" data-clear-btn="true" placeholder="Teléfono">
+						<input type="email" id="emailestablecimiento" name="emailestablecimiento" value="" data-clear-btn="true" placeholder="Correo electrónico">
+						<input type="submit" value="Guardar datos" id="guardarestablecimiento">
+					</form>
+				</div>
+				<div data-role="collapsible">
+					<h3>Accesorios</h3>
+					<form id="formeconomico">
+						<input type="text" id="ivarepercutido" name="ivarepercutido" value="" data-clear-btn="true" placeholder="% de IVA repercutido">
+						<input type="text" id="porcentajecoste" name="porcentajecoste" value="" data-clear-btn="true" placeholder="% de Coste deseado">
+						<input type="text" id="porcentajemargen" name="porcentajemargen" value="" data-clear-btn="true" placeholder="% de Margen mínimo">
+						<input type="text" id="margeneuros" name="margeneuros" value="" data-clear-btn="true" placeholder="Margen mínimo en euros">
+						<input type="submit" value="Guardar datos" id="guardareconomico">
+					</form>
+				</div>
+				<div data-role="collapsible">
+					<h3>Centros</h3>
+					<form id="formadministrador">
+						<input type="text" id="nomadmin" name="nomadmin" value="" data-clear-btn="true" placeholder="Nombre completo">
+						<input type="email" id="emailadmin" name="emailadmin" value="" data-clear-btn="true" placeholder="Correo electrónico">
+						<input type="password" id="passadmin" name="passadmin" value="" data-clear-btn="true" placeholder="Contraseña">
+						<input type="submit" value="Guardar datos" id="guardaradmin">
+					</form>
+				</div>
+			</div>
+	    </div>
+        <<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a data-transition="fade" data-icon="phone" id="info" href="#contactar">Contactar</a></li>
+                        <li><a data-transition="fade" data-icon="info" id="pedi" href="#pedidos">Pedidos</a></li>
+                        <li><a href="http://www.floristelias.es/" data-transition="fade" data-icon="grid" data-rel="dialog" data-theme="a">FloristElias</a></li>
+                    </ul>
+            </div>
+		</div>
+    </div>
+    
+</body>
+</html>
